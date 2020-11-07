@@ -41,6 +41,6 @@ public class FlappyPlayer : MonoBehaviour
     private void OnTriggerEnter()
     {
         rigidBody.position = rigidBody.velocity = new Vector3(0, 3, 0);
-        GetComponentInChildren<KillZoneGenerator>().DeleteAllKillZones();
+        GetComponentInChildren<KillZoneGeneratorFlappy>().DeleteAllKillZones();
     }
 }

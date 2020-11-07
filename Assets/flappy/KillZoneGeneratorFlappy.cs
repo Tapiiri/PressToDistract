@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillZoneGenerator : MonoBehaviour
+public class KillZoneGeneratorFlappy : MonoBehaviour
 {
 
     [SerializeField] private GameObject KillZone = null;
     private List<GameObject> KillZones = new List<GameObject>();
     public float maxTime = 10;
-    [SerializeField] private float height = 10;
     private float timer = 0;
     // Start is called before the first frame update
 

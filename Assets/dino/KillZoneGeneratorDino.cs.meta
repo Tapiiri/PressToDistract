@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 31b0dd5b540520c48906031bca6e262a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - KillZone: {fileID: 7312611567786030901, guid: 9df9d4826ce4b7540a03cfc76bf84a99,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
