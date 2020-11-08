@@ -416,6 +416,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerFollower
       objectReference: {fileID: 0}
+    - target: {fileID: 448038855727383910, guid: f5121a0115cea5e4ea2749c9e83eb464,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5121a0115cea5e4ea2749c9e83eb464, type: 3}
 --- !u!1001 &618931404570965424
@@ -425,6 +430,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 788720299}
     m_Modifications:
+    - target: {fileID: -6388964567946509839, guid: e4f83b80d9f85cc4d82c6330f9006a0e,
+        type: 3}
+      propertyPath: maxTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 618931405282444806, guid: e4f83b80d9f85cc4d82c6330f9006a0e,
         type: 3}
       propertyPath: m_Name

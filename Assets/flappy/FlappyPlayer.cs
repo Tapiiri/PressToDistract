@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlappyPlayer : MonoBehaviour
 {
 
     private bool jumpPressed = false;
-    private int jumpHeight = 7;
+    public int jumpHeight = 7;
     private float speed = 10;
     private Rigidbody rigidBody;
 
     // Start is called before the first frame update
     private void Start()
     {
+        FindObjectOfType<AudioManager>().Play("New Game");
         rigidBody = GetComponent<Rigidbody>();
     }
 
@@ -31,6 +33,7 @@ public class FlappyPlayer : MonoBehaviour
         if (jumpPressed)
         {
             rigidBody.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
+            FindObjectOfType<AudioManager>().Play("Flap");
             jumpPressed = false;
         }
 
@@ -42,5 +45,7 @@ public class FlappyPlayer : MonoBehaviour
     {
         rigidBody.position = rigidBody.velocity = new Vector3(0, 3, 0);
         GetComponentInChildren<KillZoneGeneratorFlappy>().DeleteAllKillZones();
+        FindObjectOfType<AudioManager>().Play("Game Over");
+        SceneManager.LoadScene(2);
     }
 }

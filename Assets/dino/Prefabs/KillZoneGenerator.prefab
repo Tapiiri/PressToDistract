@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b0dd5b540520c48906031bca6e262a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KillZone: {fileID: 7312611567786030901, guid: 9df9d4826ce4b7540a03cfc76bf84a99,
-    type: 3}
+  KillZone: {fileID: 105562, guid: 120f119c4643af4239cc778a081abdb4, type: 3}
   maxTime: 10
+  timerStart: 0

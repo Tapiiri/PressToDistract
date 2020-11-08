@@ -15,7 +15,8 @@ public class KillZoneGeneratorDino : MonoBehaviour
     GameObject CreateKillZone()
     {
         GameObject newKillZone = Instantiate(KillZone);
-        newKillZone.transform.position = new Vector3(transform.position.x, Random.Range(0f, 2f), 0);
+        newKillZone.transform.position = new Vector3(transform.position.x, 0, 0);
+        newKillZone.transform.localScale = new Vector3(1, Random.Range(0.5f, 1f), 1);
         return newKillZone;
     }
 
